@@ -1,10 +1,7 @@
 FROM node:dubnium-alpine AS base
 RUN apk -U add curl
 WORKDIR /usr/src/app
-<<<<<<< HEAD
 ENV CONTENT_API_URL http://localhost:3001
-=======
->>>>>>> b019000d93f6e7651e3a2ba45a2c86a469a43e3a
 EXPOSE 3000
 
 FROM node:dubnium AS build
